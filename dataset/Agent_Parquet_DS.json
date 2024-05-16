@@ -1,0 +1,22 @@
+{
+	"name": "Agent_Parquet_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_Landing",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "dbo.Agent.parquet",
+				"folderPath": "AgentData",
+				"fileSystem": "landing"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

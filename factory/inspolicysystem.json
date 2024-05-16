@@ -1,0 +1,9 @@
+{
+	"name": "inspolicysystem",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4d6c7dec-e8d1-4145-9f59-8c5186852157",
+		"tenantId": "bdc3d6d3-2f68-49d2-b389-36dba0910b90"
+	}
+}

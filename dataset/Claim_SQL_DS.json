@@ -1,0 +1,50 @@
+{
+	"name": "Claim_SQL_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Policy_SQL_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "claim_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "policy_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "date_of_claim",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "claim_amount",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "claim_status",
+				"type": "varchar"
+			},
+			{
+				"name": "LastUpdatedTimeStamp",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Claim"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

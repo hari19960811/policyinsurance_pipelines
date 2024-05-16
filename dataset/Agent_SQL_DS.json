@@ -1,0 +1,46 @@
+{
+	"name": "Agent_SQL_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Policy_SQL_Server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "agent_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "agent_name",
+				"type": "varchar"
+			},
+			{
+				"name": "agent_email",
+				"type": "varchar"
+			},
+			{
+				"name": "agent_phone",
+				"type": "varchar"
+			},
+			{
+				"name": "branch_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "create_timestamp",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Agent"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
