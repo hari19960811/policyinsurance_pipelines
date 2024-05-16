@@ -1066,7 +1066,7 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/Daily_once_at_12AM')]",
+			"name": "[concat(parameters('factoryName'), '/Daily_once_at_12_15AM')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
